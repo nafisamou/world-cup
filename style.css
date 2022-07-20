@@ -14,7 +14,7 @@
 body {
   font-family: "Poppins", sans-serif;
   height: 100vh;
-  width: 100vw; 
+  width: 100vw;
 }
 .banner {
   background-color: var(--black);
@@ -38,7 +38,6 @@ body {
   margin-bottom: 10px;
 }
 .banner-text {
-  
   color: var(--white);
   width: 531px;
   height: 424px;
@@ -56,7 +55,6 @@ body {
   left: 801px;
   top: -1px;
   bottom: -1px;
-  
 }
 .click {
   color: white;
@@ -65,13 +63,13 @@ body {
   padding: 10px;
   border-radius: 5px;
   margin-top: 30px;
-  transition: width 2ms;
+  transition: background-color 2ms;
 }
-.click:hover{
+.click:hover {
   background-color: black;
   margin-top: 32px;
 }
-.design{
+.design {
   width: 100%;
 }
 
@@ -86,15 +84,11 @@ body {
 }
 .blog-link {
   position: absolute;
-  /* z-index: 1; */
-
   margin: 30px;
   padding: 20px;
+  }
 
-  /* padding-bottom: 20px; */
-}
-
-.same{
+.same {
   color: var(--black);
   text-decoration: none;
   background: var(--white);
@@ -103,7 +97,13 @@ body {
   margin: 20px 20px 30px 20px;
   display: grid;
   grid-template-rows: repeat(3;1fr);
-  
+  transition: background-color 2ms;
+}
+.same:hover{
+  background-color: red;
+  margin-top: 21px;
+  color: aliceblue;
+
 }
 .same-2 {
   color: var(--white);
@@ -114,23 +114,24 @@ body {
   margin: 30px 20px 30px 20px;
   display: grid;
   grid-template-rows: repeat(3;1fr);
+  transition: background-color 2ms;
+}
+.same-2:hover{
+  background-color: whitesmoke;
+  margin-top: 31px;
+  color: black;
 }
 .blogs {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  /* width: 100%;
-    height: 100vh; */
   margin-top: 143px;
   margin-left: 49px;
-
-  /* justify-content: space-between; */
   grid-gap: 10px;
 }
 
 main {
   display: flex;
   margin-right: 140px;
-  
 }
 
 .card {
@@ -139,12 +140,9 @@ main {
   height: 362px;
   background-color: aliceblue;
   transition: background-color 2ms;
-
-  /* margin-left: 140px; */
 }
-.card:hover{
+.card:hover {
   background-color: rgb(255, 245, 226);
-  
 }
 button {
   margin-top: 8px;
@@ -172,158 +170,146 @@ button {
 .comment {
   color: gray;
 }
-.goal{
+.goal {
   margin: 20px;
   padding: 10px;
   text-align: center;
-
 }
-footer{
+footer {
   background-color: black;
-  color:white ;
+  color: white;
   width: 100%;
-  
 }
-.footer-details{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin: 20px;
-    padding: 10px;
-    width: 100%;
+.footer-details {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+  padding: 10px;
+  width: 100%;
 }
-hr{
-    margin: auto;
-width: 60%;
-border: 2px solid gray;
-
+hr {
+  margin: auto;
+  width: 60%;
+  border: 2px solid gray;
 }
-footer a{
+footer a {
   margin: 9px;
   padding: 4px;
   text-decoration: none;
   color: white;
-  
 }
-.tablet-view{
+.tablet-view {
   display: none;
 }
 /*--------- media queires --------*/
 /*------ mobile devices------ */
-@media only screen and (max-width:688px) {
-  
-main{
-display: grid;
-flex-direction: column;
-grid-template-columns: repeat(1, 1fr);
-}
-  
-  .blogs {
-      grid-template-columns: repeat(1, 1fr);
+@media only screen and (max-width: 688px) {
+  main {
+    display: grid;
+    flex-direction: column;
+    grid-template-columns: repeat(1, 1fr);
   }
 
-  
+  .blogs {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
   .blog {
-      /* flex-direction: column; */
+    /* flex-direction: column; */
   }
 
   .blogs {
-      grid-template-columns: repeat(1, 1fr);
-      margin-left: 136px;
-
+    grid-template-columns: repeat(1, 1fr);
+    margin-left: 136px;
   }
-  .banner-left{
-     width:500px ;
+  .banner-left {
+    width: 500px;
     height: 200px;
     /* margin: 40px; */
-     margin-top: 180px; 
+    margin-top: 180px;
     flex-direction: column;
     position: absolute;
-    
   }
-  .banner-img{
+  .banner-img {
     margin-left: -1%;
     margin-top: 0%;
   }
-  .footer-details{
+  .footer-details {
     flex-direction: column;
   }
 }
 
 /*_____ tablet devices______ */
 
-@media only screen and (min-width:688px) and (max-width:992px) {
-  .blog{display:flex;
-  flex-direction:row ;
-width: 500px;
-height: 200px;
-border: 1px solid gainsboro;
-background-color: gainsboro;
+@media only screen and (min-width: 688px) and (max-width: 992px) {
+  .blog {
+    display: flex;
+    flex-direction: row;
+    width: 500px;
+    height: 200px;
+    border: 1px solid gainsboro;
+    background-color: gainsboro;
+  }
+  .same {
+    background-color: #161616;
+    color: aliceblue;
+  }
+  .blog-link {
+    display: flex;
+    flex-direction: row;
+    word-wrap: normal;
+    white-space: nowrap;
+  }
+  .same-2 {
+    white-space: nowrap;
+    text-align: center;
+    margin-top: 20px;
+  }
 
-}
-.same{background-color: #161616;
-color: aliceblue;}
-.blog-link{display:flex;
-  flex-direction:row ;
-word-wrap:normal;
-white-space: nowrap;
-}
-.same-2{white-space:nowrap ;
-  text-align: center;
-  margin-top: 20px;
-}
-
-  main{
-      display: block;
+  main {
+    display: block;
   }
 
   .blogs {
-      grid-template-columns: repeat(2, 1fr);
-      margin-left: 136px;
+    grid-template-columns: repeat(2, 1fr);
+    margin-left: 136px;
   }
-  .banner{
-    width:100% ;
-  
+  .banner {
+    width: 100%;
   }
-  .banner-left{
-  flex-direction: column;
- 
+  .banner-left {
+    flex-direction: column;
   }
-  .banner-left p{
+  .banner-left p {
     border: 1px solid gray;
-  width: 280px;
-  white-space: nowrap;
-  overflow: hidden;
+    width: 280px;
+    white-space: nowrap;
+    overflow: hidden;
   }
-.elipsis{
-  
-  text-overflow: ellipsis;
-  
-}
+  .elipsis {
+    text-overflow: ellipsis;
+  }
 
-.tablet-view {
-  
-  background: #dd0000;
-  padding: 14px;
-  border-radius: 5px;
-  display: inline;
-  margin-top: 30px;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-  margin-left: 380px;
-  
+  .tablet-view {
+    background: #dd0000;
+    padding: 14px;
+    border-radius: 5px;
+    display: inline;
+    margin-top: 30px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-left: 380px;
+  }
+  .view {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    margin: 10px;
+  }
+  footer {
+    width: 100%;
+  }
 }
-.view{
-  color: white;
-  text-decoration: none;
-  padding: 10px;
-  margin: 10px;
-
-}
-footer{
-  width: 100%;
-}
-}
-
