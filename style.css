@@ -14,16 +14,16 @@
 body {
   font-family: "Poppins", sans-serif;
   height: 100vh;
-  width: 100vw;
 }
 .banner {
   background-color: var(--black);
   position: relative;
-  width: 1321px;
+  width: 1300px;
   height: 646px;
   left: 140px;
   top: 50px;
   border-radius: 30px;
+  overflow-x: hidden;
 }
 .banner-left {
   display: flex;
@@ -32,6 +32,7 @@ body {
   align-items: center;
   margin-left: 106px;
   margin-top: 111px;
+  /* overflow-x: hidden; */
 }
 .banner-left p {
   padding-bottom: 10px;
@@ -175,10 +176,16 @@ button {
   padding: 10px;
   text-align: center;
 }
+.tablet-view {
+  display: none;
+  transition:2ms ;
+  background-color: red;
+}
 footer {
   background-color: black;
   color: white;
   width: 100%;
+  
 }
 .footer-details {
   display: flex;
@@ -200,11 +207,7 @@ footer a {
   text-decoration: none;
   color: white;
 }
-.tablet-view {
-  display: none;
-  transition:2ms ;
-  background-color: red;
-}
+
 /*--------- media queires --------*/
 /*------ mobile devices------ */
 @media only screen and (max-width: 688px) {
@@ -257,6 +260,11 @@ footer a {
   }
   .footer-details {
     flex-direction: column;
+  }
+  footer{
+    width: 100%;
+    overflow: hidden;
+    overflow-x: hidden;
   }
 }
 
@@ -336,7 +344,7 @@ footer a {
 
   .tablet-view {
     background: #dd0000;
-    padding: 14px;
+    padding: 17px;
     border-radius: 5px;
     display: inline;
     margin-top: 30px;
@@ -361,6 +369,8 @@ footer a {
     font-weight: bold;
   }
   footer {
-    width: 100%;
+    width: 1000px;
+    overflow: hidden;
+    overflow-x: hidden;
   }
 }
